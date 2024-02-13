@@ -1,4 +1,4 @@
-dateModified: 1707793686
+dateModified: 1707794389
 email:
   fromEmail: support@sixheads.com
   fromName: 'Crafty Motoventure'
@@ -22,6 +22,11 @@ meta:
     c318141a-9718-41ec-a35d-26bb1945803d: Home # Home
     cefbbf34-4b06-4592-a34b-3585adc0bdfe: 'Hero Image' # Hero Image
     f9d25293-4b12-4128-be7e-6bb4642611e1: 'Crafty Motoventure' # Crafty Motoventure
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true
