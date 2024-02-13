@@ -1,5 +1,7 @@
 {% extends "index" %}
 
+{% set body_classes = 'inner-page' %}
+
 {% block content %}
 
 {% set stories = craft.entries.section('stories').all() %}

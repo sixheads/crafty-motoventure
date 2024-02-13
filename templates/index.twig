@@ -27,7 +27,7 @@
       href="{{ siteUrl }}static/css/styles.css"
     />
   </head>
-  <body class="home-page">
+  <body class="{{ body_classes|default('home-page')}}">
     <div class="wrapper">
       <header class="header">
         <div class="header__content content-column">
