@@ -1,4 +1,4 @@
-dateModified: 1707801993
+dateModified: 1707803206
 email:
   fromEmail: support@sixheads.com
   fromName: 'Crafty Motoventure'
@@ -16,6 +16,7 @@ meta:
     2a9ddea9-7da1-4328-9a7d-17362b816726: Footer # Footer
     2b2c6b64-8298-4b45-a2cd-82b6d71c4ff2: 'Short Description' # Short Description
     3abfa5c6-c879-4c64-8f03-b00943c7665c: Home # Home
+    3ef0cd5d-3bd7-4b40-b989-e22019b3a12d: Slider # Slider
     6fa07a07-8fea-4f88-9bd0-85f17fe951c1: 'Stories Listing' # Stories Listing
     8d4d11e6-5fb6-4382-bb2b-423eaa5b9dca: 'Full Name' # Full Name
     9e8b5d30-88e1-469a-939f-67489e11890a: 'Home Page' # Home Page
@@ -27,6 +28,7 @@ meta:
     995187d5-d494-4cb3-bd2b-bc60ff60f8e7: 'Rich Text' # Rich Text
     8761498f-9b6b-463b-b2e6-f7b83106c9a6: Link # Link
     63534776-7c72-4b5b-a2d9-f870d1bce7b2: 'Hero Title' # Hero Title
+    a723ce9a-6a06-4617-8ec0-b34fc1de0797: Hero # Hero
     a899e199-5c1d-4c56-9675-7bd8fb5b12d9: Default # Default
     aa9149f6-5b96-4240-8793-5b78a56a0d63: Default # Default
     aee8afdb-784b-49ac-a3b0-f1c8e3393e4a: Stories # Stories
@@ -41,6 +43,8 @@ meta:
     cefbbf34-4b06-4592-a34b-3585adc0bdfe: 'Hero Image' # Hero Image
     d0c5e38d-52d2-432a-82ca-5ec6a7db6656: Rider # Rider
     d1b5d898-93ca-42f0-92f2-e69bc99cad3b: 'Riders Intro Content' # Riders Intro Content
+    d574d5f5-1e51-4a27-b21f-703a0eec49bc: 'Content Image' # Content Image
+    dcad3107-4e18-458d-8188-db03c01299f9: Avatar # Avatar
     f9d25293-4b12-4128-be7e-6bb4642611e1: 'Crafty Motoventure' # Crafty Motoventure
     f91a405c-7cd1-43f6-ab3c-e791232b9ba7: 'Nav Links' # Nav Links
     fcade7fb-fe4a-4937-8692-661df59177f0: 'Featured Story' # Featured Story

@@ -2,67 +2,70 @@
 
 {% block content %}
 
-{% set image = entry.heroImage.one() %}
+  {% cache using key "home-page" %}
 
-<section class="hero" style="background-image: url('{{ image.url }}')">
-      <div class="hero__content content-column">
+  {% set image = entry.heroImage.one() %}
 
-        <h1>{{ entry.heroTitle }}</h1>
+  <section class="hero" style="background-image: url('{{ image.getUrl('hero') }}')">
+        <div class="hero__content content-column">
 
-      </div>
-    </section>
-
-    {% set featuredStory = entry.featuredStory.one() %}
-
-    {% if featuredStory %}
-    <section class="featured-story">
-      <div class="featured-story__flex content-column">
-
-        <div class="featured-story__content">
-
-          <h2>{{ featuredStory.title }}</h2>
-
-          <p>{{ featuredStory.shortDescription }}</p>
-
-          <p>
-            <a href="{{ featuredStory.url }}" class="cta-link">Discover the full story</a>
-          </p>
+          <h1>{{ entry.heroTitle }}</h1>
 
         </div>
+      </section>
 
-        <div class="featured-story__slider">
+      {% set featuredStory = entry.featuredStory.one() %}
 
-          <!-- Slider Component -->
-          {% include "components/slider" with {
-            photos: featuredStory.photos.all()
-          } %}
+      {% if featuredStory %}
+      <section class="featured-story">
+        <div class="featured-story__flex content-column">
 
-        </div>
+          <div class="featured-story__content">
 
-      </div>
-    </section>
-    {% endif %}
+            <h2>{{ featuredStory.title }}</h2>
 
+            <p>{{ featuredStory.shortDescription }}</p>
 
-    <section class="section section--more-padding section--light section--angled-top">
-      <div class="content-column centered">
+            <p>
+              <a href="{{ featuredStory.url }}" class="cta-link">Discover the full story</a>
+            </p>
 
-        {{ entry.ridersIntroContent }}
+          </div>
 
-        <div class="flex-columns">
-          {% for rider in entry.riders.all() %}
+          <div class="featured-story__slider">
 
-            {% set portrait = rider.photo.one() %}
-            <div class="flex-columns__item">
-              <img src="{{ portrait.url }}" alt="{{ rider.fullName }}" class="flex-columns__image">
-              <h4>{{ rider.fullName }}</h4>
-              <p>{{ rider.description }}</p>
-            </div>
-          {% endfor %}
+            <!-- Slider Component -->
+            {% include "components/slider" with {
+              photos: featuredStory.photos.all()
+            } %}
+
+          </div>
 
         </div>
+      </section>
+      {% endif %}
 
-      </div>
-    </section>
+
+      <section class="section section--more-padding section--light section--angled-top">
+        <div class="content-column centered">
+
+          {{ entry.ridersIntroContent }}
+
+          <div class="flex-columns">
+            {% for rider in entry.riders.all() %}
+
+              {% set portrait = rider.photo.one() %}
+              <div class="flex-columns__item">
+                <img src="{{ portrait.getUrl('avatar') }}" alt="{{ rider.fullName }}" class="flex-columns__image">
+                <h4>{{ rider.fullName }}</h4>
+                <p>{{ rider.description }}</p>
+              </div>
+            {% endfor %}
+
+          </div>
+
+        </div>
+      </section>
+  {% endcache %}
 
 {% endblock %}

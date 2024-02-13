@@ -11,7 +11,7 @@
 
   <div class="slider__reel">
     {% for photo in photos %}
-      <img src="{{ photo.url }}" alt="{{ photo.title }}" class="slider__image">
+      <img src="{{ photo.getUrl('slider') }}" alt="{{ photo.title }}" class="slider__image">
     {% endfor %}
   </div>
 

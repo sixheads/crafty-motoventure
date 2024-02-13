@@ -10,7 +10,7 @@ settings:
   availableVolumes: '*'
   columnType: text
   configSelectionMode: choose
-  defaultTransform: ''
+  defaultTransform: d574d5f5-1e51-4a27-b21f-703a0eec49bc # Content Image
   manualConfig: ''
   purifierConfig: null
   purifyHtml: true

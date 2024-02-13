@@ -6,19 +6,23 @@
 
 {% block content %}
 
-<article class="section">
-  <div class="content-column content-column--narrow">
+  {% cache using key "story-detail-page" %}
 
-    <h1 class="centered">{{ entry.title }}</h1>
+    <article class="section">
+      <div class="content-column content-column--narrow">
 
-    <!-- Slider Component -->
-    {% include "components/slider" with {
-      photos: entry.photos.all()
-    } %}
+        <h1 class="centered">{{ entry.title }}</h1>
 
-    {{ entry.richText }}
+        <!-- Slider Component -->
+        {% include "components/slider" with {
+          photos: entry.photos.all()
+        } %}
 
-  </div>
-</article>
+        {{ entry.richText }}
+
+      </div>
+    </article>
+
+  {% endcache %}
 
 {% endblock %}
