@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: storiesListing
+name: 'Stories Listing'
+propagationMethod: all
+siteSettings:
+  f9d25293-4b12-4128-be7e-6bb4642611e1: # Crafty Motoventure
+    enabledByDefault: true
+    hasUrls: true
+    template: stories/index.twig
+    uriFormat: stories
+type: single

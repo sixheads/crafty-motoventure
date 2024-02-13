@@ -63,6 +63,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: fcade7fb-fe4a-4937-8692-661df59177f0 # Featured Story
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b4a7b510-9b5b-46af-a595-a74d6afd7e5f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Featured Story'
+        uid: 4fbe277b-a89c-427d-b3ef-d6e792cd9ef0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: d1b5d898-93ca-42f0-92f2-e69bc99cad3b # Riders Intro Content
             instructions: null
             label: null

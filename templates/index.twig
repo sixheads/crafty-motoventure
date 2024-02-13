@@ -14,7 +14,7 @@
       type="image/x-icon"
     />
 
-    <title>Motoventure</title>
+    <title>{{ siteName }}</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -31,10 +31,10 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__content content-column">
-          <a href="./" class="logo">
+          <a href="{{ siteUrl }}" class="logo">
             <img
               src="{{ siteUrl }}static/images/logo.svg"
-              alt="Motoventure"
+              alt="{{ siteName }}"
             />
           </a>
 
@@ -52,8 +52,11 @@
           </button>
 
           <nav class="nav">
-            <a href="stories.html" class="nav__link">Stories</a>
-            <a href="gear.html" class="nav__link">Our Gear</a>
+            {% for link in header.navLinks.all() %}
+              {% set destination = link.linkDestination.one() %}
+              {% set activeLink = craft.app.request.segments|first == destination.uri %}
+              <a href="{{ destination.url }}" class="nav__link {% if activeLink %}nav__link--active{% endif %} ">{{ link.linkText }}</a>
+            {% endfor %}
           </nav>
         </div>
       </header>
@@ -64,7 +67,7 @@
 
     <footer class="footer">
       <div class="content-column centered">
-        <p>Copyright 2021 Motoventure Corp. All rights reserved.</p>
+        {{ footer.richText }}
       </div>
     </footer>
 

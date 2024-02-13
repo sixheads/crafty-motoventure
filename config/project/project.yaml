@@ -1,4 +1,4 @@
-dateModified: 1707797186
+dateModified: 1707801993
 email:
   fromEmail: support@sixheads.com
   fromName: 'Crafty Motoventure'
@@ -13,26 +13,37 @@ fs:
     url: $ASSET_BASE_URL
 meta:
   __names__:
+    2a9ddea9-7da1-4328-9a7d-17362b816726: Footer # Footer
     2b2c6b64-8298-4b45-a2cd-82b6d71c4ff2: 'Short Description' # Short Description
     3abfa5c6-c879-4c64-8f03-b00943c7665c: Home # Home
+    6fa07a07-8fea-4f88-9bd0-85f17fe951c1: 'Stories Listing' # Stories Listing
     8d4d11e6-5fb6-4382-bb2b-423eaa5b9dca: 'Full Name' # Full Name
     9e8b5d30-88e1-469a-939f-67489e11890a: 'Home Page' # Home Page
     14c8d93a-151c-47a3-a836-a2d818518af2: 'Crafty Motoventure' # Crafty Motoventure
     049f0604-df55-4a1d-884a-9a952351e75f: Common # Common
+    519f4587-a342-4241-951e-f3a14b578ada: 'Stories Listing' # Stories Listing
     748cfad6-39dc-406b-9e5b-49453439274e: Description # Description
+    1171c660-278d-4988-916d-f4773f859938: 'General Pages' # General Pages
     995187d5-d494-4cb3-bd2b-bc60ff60f8e7: 'Rich Text' # Rich Text
+    8761498f-9b6b-463b-b2e6-f7b83106c9a6: Link # Link
     63534776-7c72-4b5b-a2d9-f870d1bce7b2: 'Hero Title' # Hero Title
     a899e199-5c1d-4c56-9675-7bd8fb5b12d9: Default # Default
+    aa9149f6-5b96-4240-8793-5b78a56a0d63: Default # Default
     aee8afdb-784b-49ac-a3b0-f1c8e3393e4a: Stories # Stories
+    b0f28a22-e694-4d29-a912-59d3032d8fd2: 'Link Destination' # Link Destination
+    b1811dbd-cc38-4398-94bf-d2e86c5ccf79: Header # Header
     b76212a4-0217-4a10-a513-602b93945979: Uploads # Uploads
     bfc72757-e434-49ef-aa38-a7dc2aae418b: Photo # Photo
     c10201fd-ec75-4c06-a94c-0811a3e8d457: Riders # Riders
     c318141a-9718-41ec-a35d-26bb1945803d: Home # Home
     c760592d-e700-4f5c-8995-fd0b05183eba: Photos # Photos
+    ce8ed609-01c3-4579-9802-71dd427da21b: 'Link Text' # Link Text
     cefbbf34-4b06-4592-a34b-3585adc0bdfe: 'Hero Image' # Hero Image
     d0c5e38d-52d2-432a-82ca-5ec6a7db6656: Rider # Rider
     d1b5d898-93ca-42f0-92f2-e69bc99cad3b: 'Riders Intro Content' # Riders Intro Content
     f9d25293-4b12-4128-be7e-6bb4642611e1: 'Crafty Motoventure' # Crafty Motoventure
+    f91a405c-7cd1-43f6-ab3c-e791232b9ba7: 'Nav Links' # Nav Links
+    fcade7fb-fe4a-4937-8692-661df59177f0: 'Featured Story' # Featured Story
 plugins:
   redactor:
     edition: standard
