@@ -1,3 +1,6 @@
+{% set pageTitle = pageTitle|default('Home') ~ " | " ~ siteName %}
+{% set pageDescription = pageDescription|default('Motorcycle stories, lifestyle and gear') %}
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -14,7 +17,8 @@
       type="image/x-icon"
     />
 
-    <title>{{ siteName }}</title>
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link

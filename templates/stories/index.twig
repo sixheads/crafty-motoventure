@@ -2,6 +2,8 @@
 
 {% set body_classes = 'inner-page' %}
 
+{% set pageTitle = entry.title %}
+
 {% block content %}
 
 {% set stories = craft.entries.section('stories').all() %}
