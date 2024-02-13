@@ -1,0 +1,36 @@
+dateModified: 1707793686
+email:
+  fromEmail: support@sixheads.com
+  fromName: 'Crafty Motoventure'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    3abfa5c6-c879-4c64-8f03-b00943c7665c: Home # Home
+    9e8b5d30-88e1-469a-939f-67489e11890a: 'Home Page' # Home Page
+    14c8d93a-151c-47a3-a836-a2d818518af2: 'Crafty Motoventure' # Crafty Motoventure
+    049f0604-df55-4a1d-884a-9a952351e75f: Common # Common
+    63534776-7c72-4b5b-a2d9-f870d1bce7b2: 'Hero Title' # Hero Title
+    b76212a4-0217-4a10-a513-602b93945979: Uploads # Uploads
+    c318141a-9718-41ec-a35d-26bb1945803d: Home # Home
+    cefbbf34-4b06-4592-a34b-3585adc0bdfe: 'Hero Image' # Hero Image
+    f9d25293-4b12-4128-be7e-6bb4642611e1: 'Crafty Motoventure' # Crafty Motoventure
+system:
+  edition: solo
+  live: true
+  name: 'Crafty Motoventure'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
