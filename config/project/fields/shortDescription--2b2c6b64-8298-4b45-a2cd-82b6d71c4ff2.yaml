@@ -1,0 +1,19 @@
+columnSuffix: lplmihjl
+contentColumnType: text
+fieldGroup: 049f0604-df55-4a1d-884a-9a952351e75f # Common
+handle: shortDescription
+instructions: null
+name: 'Short Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 3
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

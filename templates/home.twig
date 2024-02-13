@@ -58,28 +58,18 @@
     <section class="section section--more-padding section--light section--angled-top">
       <div class="content-column centered">
 
-        <h2>Meet the Riders</h2>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        {{ entry.ridersIntroContent }}
 
         <div class="flex-columns">
+          {% for rider in entry.riders.all() %}
 
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}static/images/photos/henry-potter.jpg" alt="Henry Potter" class="flex-columns__image">
-            <h4>Henry Potter</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}static/images/photos/sarah-bradbury.jpg" alt="Sarah Bradbury" class="flex-columns__image">
-            <h4>Sarah Bradbury</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}static/images/photos/jack-starfield.jpg" alt="Jack Starfield" class="flex-columns__image">
-            <h4>Jack Starfield</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
+            {% set portrait = rider.photo.one() %}
+            <div class="flex-columns__item">
+              <img src="{{ portrait.url }}" alt="{{ rider.fullName }}" class="flex-columns__image">
+              <h4>{{ rider.fullName }}</h4>
+              <p>{{ rider.description }}</p>
+            </div>
+          {% endfor %}
 
         </div>
 

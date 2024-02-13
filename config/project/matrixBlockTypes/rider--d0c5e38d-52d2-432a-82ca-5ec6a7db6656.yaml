@@ -1,0 +1,129 @@
+field: c10201fd-ec75-4c06-a94c-0811a3e8d457 # Riders
+fieldLayouts:
+  52028648-f4ae-4db9-871a-bebd928dba9b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bfc72757-e434-49ef-aa38-a7dc2aae418b # Photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55c4381a-c6cd-4f9c-a7ff-cc73cef796d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8d4d11e6-5fb6-4382-bb2b-423eaa5b9dca # Full Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd9d95f0-fd9f-4e07-8b18-20d4cb85f6be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 748cfad6-39dc-406b-9e5b-49453439274e # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68286ca3-cfc6-4622-b7d2-b5cf1f916f5d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a8e35110-00d1-4583-97b7-e4c480e5048b
+        userCondition: null
+fields:
+  8d4d11e6-5fb6-4382-bb2b-423eaa5b9dca: # Full Name
+    columnSuffix: smdrmadj
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  748cfad6-39dc-406b-9e5b-49453439274e: # Description
+    columnSuffix: rtmvhwps
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bfc72757-e434-49ef-aa38-a7dc2aae418b: # Photo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: null
+    name: Photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:b76212a4-0217-4a10-a513-602b93945979' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:b76212a4-0217-4a10-a513-602b93945979' # Uploads
+      restrictedLocationSubpath: null
+      selectionLabel: 'Add a photo'
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:b76212a4-0217-4a10-a513-602b93945979' # Uploads
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: rider
+name: Rider
+sortOrder: 1
